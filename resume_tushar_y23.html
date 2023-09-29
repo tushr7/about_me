@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Tushar Patil - 2023</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      p {
+        margin: 5px 0;
+      }
+      .summary {
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .section-content {
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      /* Professional Colors */
+      .container {
+        background-color: #ffffff;
+        color: #333333;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333333;
+      }
+      .section-title {
+        color: #333333;
+      }
+      .section-content {
+        color: #666666;
+      }
+      ul li {
+        color: #666666;
+      }
+      .contact-info p {
+        color: #666666;
+      }
+      /* Adjustments for Visual Appeal */
+      .container {
+        line-height: 1.5;
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-bottom: 5px;
+      }
+      p,
+      i {
+        margin-bottom: 8px;
+        color: #666666;
+      }
+
+      .section-title {
+        margin-bottom: 5px;
+      }
+      .section-content {
+        margin-bottom: 8px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* i { font-size: 12px;} */
+
+      /* Responsive Design */
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        .section-title {
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+
+        li {
+          font-size: 14px;
+        }
+
+        i {
+          font-size: 12px;
+          line-height: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="font-family: 'Arial'">
+      <div class="contact-info">
+        <h1>TUSHAR PATIL</h1>
+        <p>Chembur, Mumbai, Maharashtra, 400088</p>
+        <p>
+          Write Me @:
+          <a href="mailto:tushrpaitl@outlook.com"> tushrpatil@outlook.com</a>
+        </p>
+        <p>Call / Ping @: +91 - <a href="tel:918433544278">8433544278</a></p>
+      </div>
+      <div class="summary">
+        <h2>Summary</h2>
+        <p>
+          About 4 years of experience as Quality analyst with expertise in
+          testing, issue resolution, and process improvement. Collaborative
+          problem-solving to ensure product quality and maximize customer
+          satisfaction. Engaged in learning and knowledge discovery.
+        </p>
+      </div>
+      <div class="experience">
+        <h2>Experience</h2>
+        <div class="section">
+          <h3 class="section-title">Quality Analyst</h3>
+          <p class="section-content">Interpublic Group, Mumbai</p>
+          <p class="section-content">(May, 2022 - Present)</p>
+          <p>
+            <span
+              style="
+                background-color: palegreen;
+                padding: 3px;
+                border-radius: 5px;
+              "
+              ><a href="https://www.interpublic.com/about/" target="_blank"
+                >About IPG:</a
+              ></span
+            >
+          </p>
+          <i
+            >Interpublic Group is a global provider of marketing
+            solutions.Specialize in advertising, digital marketing,
+            communications planning, media, public relations, and specialty
+            marketing.</i
+          >
+          <p>Current Project: BMW, MINI</p>
+          <p>Tool: AEM</p>
+          <p>
+            <span
+              style="
+                background-color: palegreen;
+                padding: 3px;
+                border-radius: 5px;
+              "
+              ><a href="https://www.bmwgroup.com/en.html" target="_blank"
+                >About BMW:</a
+              ></span
+            >
+          </p>
+          <i>
+            The BMW GROUP offers premium financial and mobility services. With
+            31 production and assembly facilities in 15 countries, the BMW Group
+            operates a vast production network. Furthermore, it boasts a global
+            sales network spanning over 140 countries.</i
+          >
+          <h4>Roles & Responsibilities:</h4>
+          <ul>
+            <li>
+              Conduct audits on AEM projects of 7+ Markets in APAC region,
+              Marketing Mailers and other thirdparty projects, providing
+              valuable feedback to developers & team. Ensure quality standards
+              maintained throughout project lifecycle until delivery.
+            </li>
+            <li>
+              Maintain monthly Defect Trackers to drive continuous process
+              improvement and enhance overall efficiency.
+            </li>
+            <li>
+              Create checklists and documentation for new templates or updates,
+              streamlining processes and ensuring consistency in deliverables.
+            </li>
+            <li>
+              Participate in daily scrum calls, delivering projects status
+              reports to engage effective communication and collaboration.
+            </li>
+            <li>
+              Actively engage in regular training sessions of the latest
+              products and tools, ensuring up-to-date knowledge and skills.
+            </li>
+          </ul>
+          <!-- Quosphere -->
+          <h3 class="section-title">Software Tester in AI Department</h3>
+          <p class="section-content">Quosphere, Navi Mumbai</p>
+          <p class="section-content">(April, 2021 - November, 2021)</p>
+          <p>
+            <span
+              style="
+                background-color: palegreen;
+                padding: 3px;
+                border-radius: 5px;
+              "
+              ><a href="https://quosphere.com/about-us.html" target="_blank"
+                >About Quosphere:</a
+              ></span
+            >
+          </p>
+          <i
+            >Quosphere is a provider of advanced analytics solutions on a global
+            scale.With deep industry knowledge and expertise across various
+            technologies, we deliver top-notch solutions tailored to meet our
+            clients' specific business requirements.</i
+          >
+          <ul>
+            <p>
+              I worked on an AI-driven project, ensuring quality across customer
+              apps and a custom-built CRM tool. Conducted functional, end-to-end
+              testing, managed defect tracking, and resolved issues. Actively
+              participated in several sprints, testing third-party to payment
+              integration. Collaborated with developers, project managers, and
+              support teams. Developed automated scripts for backend activities
+              to eleminate robotic work.
+            </p>
+          </ul>
+          <!-- KhelGroup (Sachar) -->
+          <h3 class="section-title">Game Tester</h3>
+          <p class="section-content">The KhelGroup, Mumbai</p>
+          <p class="section-content">(April, 2019 - December, 2020)</p>
+          <p>
+            <span
+              style="
+                background-color: palegreen;
+                padding: 3px;
+                border-radius: 5px;
+              "
+              ><a href="https://thekhelgroup.com/about-us.html" target="_blank"
+                >About KhelGroup:</a
+              ></span
+            >
+          </p>
+          <i
+            >Khel Group has brought about a revolution in the online gaming
+            industry across India. The inspiration is to expand globally and
+            provide users with a unique and user-friendly gaming experience.</i
+          >
+          <ul>
+            <p>
+              I played poker and betting games designed for online gamblers in
+              India. I had the opportunity to contribute to a game with over 5+
+              million registered users on a platform accessible via browser,
+              Android, and iOS. Conducted various types of testing on the game's
+              UI, including functional testing, payment gateways & third party
+              services intergration testing. I also received training in
+              automation testing and analytics.
+            </p>
+          </ul>
+        </div>
+        <!-- Add more experience sections if needed -->
+      </div>
+      <div class="education">
+        <h2>Education</h2>
+        <div class="section">
+          <h3 class="section-title">BSc Information Technology</h3>
+          <p class="section-content">University of Mumbai, 2019</p>
+        </div>
+        <!-- Add more education sections if needed -->
+      </div>
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            Auditing, Manual Testing, Scripting (Selenium & Python), Test
+            Techniques, Responsive Testing
+          </li>
+          <li>HTML, CSS, JS, Hands on Postman: API Testing, SQL</li>
+          <li>CMS: WIX Editor, Wordpress, AEM(Overview)</li>
+          <li>
+            Microsoft Office 365, Google Products(Office, Basics of Google
+            Analystics)
+          </li>
+        </ul>
+      </div>
+      <div class="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+          <li>Internet, Video Games</li>
+          <li>Cricket, Carrom, Dart</li>
+          <li>Music, Travelling</li>
+        </ul>
+      </div>
+      <div class="current">
+        <h2>Current Learnings</h2>
+        <p>- Microsoft PowerBI</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin: 20px">
+      <button id="cmd">Download as PDF</button>
+    </div>
+    <div>
+      <p align="center">
+        <em
+          ><a href="./cover_letter_tushar.html"
+            >Click Here to know more about me</a
+          ></em
+        >
+      </p>
+      <br />
+      <p align="center"><em>Tushar_Patil_2023</em></p>
+    </div>
+    <script>
+      var doc = new jsPDF({
+        orientation: "portrait", // 'portrait' or 'landscape'
+        unit: "mm",
+        format: "a2", // specifies paper size
+      });
+      var specialElementHandlers = {
+        "#editor": function (element, renderer) {
+          return true;
+        },
+      };
+
+      $("#cmd").click(function () {
+        var fontSize = 32;
+        doc.setFontSize(fontSize);
+        doc.fromHTML($(".container").html(), 15, 15, {
+          width: 360,
+          elementHandlers: specialElementHandlers,
+        });
+        doc.save("HeZ_Tushar_Patil.pdf");
+      });
+    </script>
+  </body>
+</html>

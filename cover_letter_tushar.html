@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Tushar Patil - 2023</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="robots" content="noindex,nofollow" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .head {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .sign-off {
+      padding-top: 4px;
+      line-height: 0.5em !important;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p class="head">Dear Hiring Manager,</p>
+
+      <p>
+        I am writing to express my interest in the Quality Analyst position at
+        your esteemed organization. With about 4 years of experience in testing,
+        issue resolution, and process improvement, I am confident in my ability
+        to contribute to your team's success.
+      </p>
+
+      <p>
+        Throughout my career, I have demonstrated a collaborative approach to
+        problem-solving, ensuring product quality and maximizing customer
+        satisfaction. I am a quiet person who values personal space but also
+        understands the importance of teamwork. I believe in maintaining open
+        and respectful communication with colleagues.
+      </p>
+
+      <p>
+        In my current role as a Quality Analyst at Interpublic Group, I have
+        been actively involved in auditing AEM projects, providing valuable
+        feedback to developers and the team. I am responsible for maintaining
+        quality standards throughout the project lifecycle and driving
+        continuous process improvement. Additionally, I create checklists and
+        documentation to streamline processes and ensure consistent
+        deliverables. My participation in daily scrum calls enables effective
+        communication and collaboration.
+      </p>
+
+      <p>
+        Previously, I worked as a Software Tester at Quosphere, where I gained
+        experience in functional and end-to-end testing. I actively contributed
+        to an AI-driven project, ensuring quality across customer apps and a
+        custom-built CRM tool. I collaborated with various stakeholders and
+        developed automated scripts to enhance efficiency.
+      </p>
+
+      <p>
+        I also have experience as a Game Tester at The KhelGroup, where I tested
+        poker and betting games for online gamblers. I conducted various types
+        of testing, including functional testing, payment gateway, and
+        third-party service integration. My training in automation testing and
+        analytics further enhanced my skills.
+      </p>
+
+      <p>
+        I hold a BSc in Information Technology from the University of Mumbai and
+        possess a range of technical skills, including auditing, manual testing,
+        scripting (Selenium & Python), and responsive testing. I am proficient
+        in HTML, CSS, JS, and have hands-on experience with tools such as
+        Postman for API testing and SQL for database management.
+      </p>
+
+      <p>
+        Beyond my professional pursuits, I enjoy exploring the internet, playing
+        video games, and participating in sports such as cricket and carrom. I
+        am also passionate about music and traveling, which provide me with a
+        well-rounded perspective.
+      </p>
+
+      <p>
+        Currently, I am expanding my knowledge in Microsoft PowerBI to stay
+        updated with the latest industry trends and advancements.
+      </p>
+
+      <p>
+        I am excited about the opportunity to contribute my skills and
+        experience to your team. Thank you for considering my application. I
+        look forward to the possibility of discussing how I can add value to
+        your organization.
+      </p>
+      <div class="sign-off">
+        <p class="head">Sincerely,</p>
+        <p class="head">Tushar Patil</p>
+        <p>
+          <a href="mailto:tushrpaitl@outlook.com"> tushrpatil@outlook.com</a>
+        </p>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script>
+      // Get canvas element
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Set canvas dimensions
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      // Generate random light color
+      function getRandomColor() {
+        const letters = "89ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 8; i++) {
+          color += letters[Math.floor(Math.random() * letters.length)];
+        }
+        return color;
+      }
+
+      // Create falling lines
+      function createLines() {
+        const numLines = 8; // Adjust as needed
+        const lineWidth = 15; // Adjust as needed
+
+        for (let i = 0; i < numLines; i++) {
+          const x = Math.random() * canvas.width;
+          const y = -Math.random() * canvas.height;
+          const height = Math.random() * canvas.height;
+
+          ctx.beginPath();
+          ctx.moveTo(x, y);
+          ctx.lineTo(x, y + height);
+          ctx.lineWidth = lineWidth;
+          ctx.strokeStyle = getRandomColor();
+          ctx.stroke();
+        }
+      }
+
+      // Animation loop
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        createLines();
+        setTimeout(animate, 900); // Adjust the timeout value for slower animation
+      }
+
+      // Start animation
+      animate();
+    </script>
+  </body>
+</html>
